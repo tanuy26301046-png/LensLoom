@@ -1,9 +1,20 @@
 # LensLoom
 
-LensLoom is a clean, modern image-search web application designed to help users quickly discover visual inspiration. In upcoming updates, it will connect to a public image API to render query results in real time.
+LensLoom is a lightweight image-search interface for discovering visual inspiration. Searches and category quick-picks provide accessible feedback, while the results grid remains empty until an image API is connected.
+
+## Run Locally
+
+Open `index.html` in a browser. No build tools or dependencies are required.
+
+## Features
+
+- Labeled search input and search button.
+- Category quick-picks that fill and submit a search.
+- Clear control and live empty-state feedback.
+- Responsive, initially empty CSS grid reserved for image results.
 
 ## Design Decisions
 
-1. **Category Quick-Pick Chips:** Added styled topic chips directly under the search bar so users can instantly trigger searches for popular topics without typing.
-2. **Dedicated Empty-State Indicator:** Included a clear empty-state banner (`#empty-state`) within the viewport to explicitly instruct users on what to do when no search has been initiated yet.
-3. **Forest Green Color Palette:** Selected a soothing forest green (`#1b4d3e`) and sea green accent (`#2e8b57`) palette to create an aesthetic distinct from standard blue or purple dark-mode themes.
+1. **Category Quick-Picks:** Topic buttons submit common searches without requiring typing.
+2. **Dedicated Empty State:** The `#empty-state` region provides initial guidance and announces search feedback accessibly.
+3. **Forest Green Palette:** Forest green (`#1b4d3e`) and sea green (`#2e8b57`) distinguish the app from conventional blue or purple interfaces.

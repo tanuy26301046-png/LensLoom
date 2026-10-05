@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LensLoom - Discover Visual Inspiration</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Branded Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <h1 class="brand-title">LensLoom</h1>
+      <p class="brand-tagline">Weaving high-resolution visuals into your daily inspiration.</p>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- Search Section -->
+    <section class="search-section">
+      <form id="search-form" class="search-form">
+        <div class="input-group">
+          <label for="search-input" class="visually-hidden">Search high-quality images</label>
+          <input 
+            type="search" 
+            id="search-input" 
+            placeholder="Search for photos, textures, vector art..." 
+            autocomplete="off"
+          />
+          <button type="button" id="clear-btn" class="clear-btn">Clear</button>
+        </div>
+        <button type="submit" id="search-btn" class="search-btn">Search</button>
+      </form>
+
+      <!-- Extra Feature 1: Category / Quick-pick Suggestion Chips -->
+      <div class="category-chips">
+        <span class="chip-label">Popular:</span>
+        <button type="button" class="chip">Nature</button>
+        <button type="button" class="chip">Architecture</button>
+        <button type="button" class="chip">Minimalism</button>
+        <button type="button" class="chip">Abstract</button>
+      </div>
+    </section>
+
+    <!-- Extra Feature 2: Empty-state Message Container -->
+    <div id="empty-state" class="empty-state" aria-live="polite">
+      <div class="empty-icon">🔍</div>
+      <p class="empty-text">Search to see results. Discover thousands of curated images instantly.</p>
+    </div>
+
+    <!-- Results Container (Empty Target for Part 2) -->
+    <section id="results" class="results-grid"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
